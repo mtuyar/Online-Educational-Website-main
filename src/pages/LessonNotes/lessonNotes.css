@@ -1,0 +1,25 @@
+.lessonRigtPanel{
+    color:#0d6553
+}
+
+.lessonRigtPanel:hover{
+    color:#05372d
+}
+
+.lessonRigtPanelBox{
+    background-color:#17bf9e;
+    color: white;
+    width:7%;
+    height: 3%;
+    font-size: small;
+    font-weight: 600;
+    border-radius:15%;
+    border-width: 13px;
+    justify-Content:center;
+    display:flex;
+}
+
+.lessonRigtPanelBox:hover{
+    background-color: #10846d;
+    color:white;
+}

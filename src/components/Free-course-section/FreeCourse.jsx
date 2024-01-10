@@ -61,22 +61,22 @@ const freeCourseData = [
 ];
 
 
-const FreeCourse = () => {
+const FreeCourse = (props) => {
   return (
     <section>
       <Container>
-        <Row>
-          <Col lg="12" className="text-center mb-5">
-            <h2 className="fw-bold">Ücretsiz Deneyebileceğiniz Kurslar</h2>
-          </Col>
-          <div className="containerr">
-            {freeCourseData.map((item) => (
-              <Col lg="3" md="4" className="mb-4" key={item.id}>
-                <FreeCourseCard item={item} />
-              </Col>
-            ))}
-          </div>
-        </Row>
+        <Col lg="12" className="text-center mb-5">
+          <h2 className="fw-bold">Ücretsiz Deneyebileceğiniz Kurslar</h2>
+        </Col>
+      </Container>
+      <Container>
+        <div className="containerr">
+          {freeCourseData.map((item) => (
+            <Col lg="3" md="4" className="mb-4" key={item.id}>
+              <FreeCourseCard item={item} />
+            </Col>
+          ))}
+        </div>
       </Container>
     </section>
   );

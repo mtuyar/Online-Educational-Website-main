@@ -15,28 +15,30 @@ const Testimonials = () => {
     autoplaySpeed: 3000,
     slidesToScroll: 1,
   };
+  const screenWidth = window.innerWidth;
   return (
     <section>
       <Container>
-        <Row>
-          <Col lg="10" md="12" className="m-auto">
-            <div className="testimonial__wrapper d-flex justify-content-between align-items-center ">
-              <div className="testimonial__img w-50" style={{marginRight:50}}>
-                <img src={img} alt="" style={{borderRadius:20}} className="w-100" />
+        <Col lg="10" md="12" className="m-auto">
+          <div style={{fontWeight:'bolder',justifyContent:'center',display:'flex',marginBottom:'7%'}}>
+            <h2>Öğrencilerin Dönüşleri</h2>
+          </div>
+          <div className="testimonial__wrapper d-flex justify-content-between align-items-center container_testimonials">
+          {screenWidth > 768 ?
+              <div className="testimonial__img w-50" style={{ marginRight: 50 }}>
+                <img src={img} alt=""  className="w-100" style={{ borderRadius: 20 }} />
               </div>
-
-              <div className="testimonial__content w-50">
-                <h2 className="mb-4">Öğrencilerimizin Dönüşleri</h2>
-
-                <Slider {...settings}>
+              : null}
+            <div className="testimonial__content w-50">
+              <Slider {...settings} className="slider">
                   <div>
-                    <div className="single__testimonial">
+                    <div className="testimonial_moving">
                       <h6 className="mb-3 fw-bold">
                         Eğlenceli Kurs Materyalleri
                       </h6>
                       <p>
-                      Ders anlatımı yaparken hocalar çok güzel kaynaklar kullanıyor. Ayrıca kullanılan materyaller öğrenimi eğlenceli 
-                      hale getiriyor.
+                        Ders anlatımı yaparken hocalar çok güzel kaynaklar kullanıyor. Ayrıca kullanılan materyaller öğrenimi eğlenceli
+                        hale getiriyor.
                       </p>
 
                       <div className="student__info mt-4">
@@ -47,7 +49,7 @@ const Testimonials = () => {
                   </div>
 
                   <div>
-                    <div className="single__testimonial">
+                    <div className="testimonial_moving">
                       <h6 className="mb-3 fw-bold">
                         Çok güzel anlatım...
                       </h6>
@@ -63,7 +65,7 @@ const Testimonials = () => {
                   </div>
 
                   <div>
-                    <div className="single__testimonial">
+                    <div className="testimonial_moving">
                       <h6 className="mb-3 fw-bold">
                         Samimi Hocalar
                       </h6>
@@ -72,16 +74,16 @@ const Testimonials = () => {
                       </p>
 
                       <div className="student__info mt-4">
-                        <h6 className="fw-bold">Melda Uzun</h6>
-                        <p>Tekirdağ, Misinli</p>
+                        <h6 className="fw-bold">Ali Ulvi</h6>
+                        <p>Medine</p>
                       </div>
                     </div>
                   </div>
-                </Slider>
-              </div>
+
+              </Slider>
             </div>
-          </Col>
-        </Row>
+          </div>
+        </Col>
       </Container>
     </section>
   );

@@ -1,0 +1,8 @@
+.company-col {
+    color: #000000; /* Başlangıç rengi */
+    cursor: pointer;
+  }
+  
+  .company-col:hover {
+    color: #17bf9e; /* Değişen renk */
+  }

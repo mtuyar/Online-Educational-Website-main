@@ -15,12 +15,12 @@ const HeroSection = () => {
               <h2 className="mb-4 hero__title">
                 Her zaman <br /> İstediğiniz Ortamda <br /> Seçkin Hocalarla
               </h2>
-              <p className="mb-5">
+              <p className="mb-5 hero_content">
                 Online Arapça öğrenebileceğini harika bir platform !
                 Sizde kısa bir süre içerisinde arapçanızı geliştirmek istiyorsanız bu site tam size göre...
               </p>
             </div>
-            <div>
+            <div className="arrowItems">
               <h5>
                 <FontAwesomeIcon icon={faArrowRight} style={{marginRight:10, color:'#17bf9e'}}/>
                 Başlangıç Seviyesi

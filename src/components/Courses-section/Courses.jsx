@@ -2,8 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "reactstrap";
 import "./courses.css";
 import CourseCard from "./CourseCard";
-import Carousel from "react-elastic-carousel";
-import Header from "../Header/Header";
+import { useNavigate } from "react-router-dom";
 
 const coursesData = [
   {
@@ -73,12 +72,18 @@ const coursesData = [
 ];
 
 const Courses = (props) => {
+
+  const navigate = useNavigate();
   const breakPoints = [
     { itemsToShow: 4 }
   ];
+  const onClickSeeAll = () => {
+    navigate("/courses-section");
+    window.scrollTo(0, 0);
+  }
+
   return (
     <section>
-      <Header></Header>
       <Container className={`containerClass ${props.addMargin ? 'containerClassTwo' : ''}`}>
         <Row className="flex-wrap">
           <Col lg="12" className="mb-5">
@@ -90,21 +95,19 @@ const Courses = (props) => {
                 </p>
               </div>
               <div className="w-50 text-end">
-                <button className="btn">Hepsini Gör</button>
+                <button className="btn" onClick={onClickSeeAll}>Hepsini Gör</button>
               </div>
             </div>
           </Col>
-          </Row>
-          </Container>
-          <Container>
-          <Row>
-          <div className="containerr">
-            {coursesData.map((item) => (
-              <CourseCard key={item.id} item={item} />
-
-            ))}
-          </div>
         </Row>
+      </Container>
+      <Container>
+        <div className="containerr">
+          {coursesData.map((item) => (
+            <CourseCard key={item.id} item={item} />
+
+          ))}
+        </div>
       </Container>
     </section>
   );

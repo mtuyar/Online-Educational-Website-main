@@ -52,7 +52,7 @@ const Footer = () => {
         <Row>
           <Col lg="3" md="6" className="mb-4">
             <h2 className=" d-flex align-items-center gap-1">
-            <i class="ri-slideshow-3-line icon-styling"></i> Arabic Academy.
+              <i class="ri-slideshow-3-line icon-styling"></i> Arabic Academy.
             </h2>
 
             <div className="follows">
@@ -111,9 +111,9 @@ const Footer = () => {
             </ListGroup>
           </Col>
 
-          <Col lg="3" md="6">
+          <Col>
             <h6 className="fw-bold">Bize ulaşabilirsiniz.</h6>
-            <p >Adres: Selçuk Üniversitesi Arap Dili Edebiyatı / 
+            <p >Adres: Selçuk Üniversitesi Arap Dili Edebiyatı /
               Konya-Selçuklu</p>
             <p > Telefon: +0542 316 3166 </p>
             <p>Email: arabicacademy@gmail.com</p>

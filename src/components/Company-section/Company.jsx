@@ -1,43 +1,44 @@
 import React from "react";
 import { Container, Row, Col } from "reactstrap";
+import "./company-section.css";
+
 
 const Company = () => {
+
+  const handleClick = () => {
+    // Tıklama işlemlerini burada işleyebilirsiniz
+    alert('Hayırlısı...');
+  };
+
   return (
     <section>
-      <Container>
-        <Row style={{justifyContent:'center'}}>
-          <Col lg="2" md="3" sm="4" xs="6">
-            <h3 className=" d-flex align-items-center gap-1">
-              <i class="ri-vimeo-line"></i> WhatsApp
+      <Container style={{ justifyContent: 'center', alignItems: 'center' }}>
+        <Row style={{ justifyContent: 'space-around', alignItems: 'center', width: '100%' }}>
+
+          <Col lg="2" md="3" sm="4" xs="6" onClick={handleClick}>
+            <h3 className="company-col d-flex align-items-center gap-1">
+              <i class="ri-facebook-fill" ></i> Facebook
             </h3>
           </Col>
 
-          <Col lg="2" md="3" sm="4" xs="6">
-            <h3 className=" d-flex align-items-center gap-1">
-              <i class="ri-facebook-line" ></i> Facebook
+          <Col lg="2" md="3" sm="4" xs="6" onClick={handleClick}>
+            <h3 className="company-col d-flex align-items-center gap-1">
+              <i class="ri-instagram-fill" ></i> Instagram
             </h3>
           </Col>
 
-          <Col lg="2" md="3" sm="4" xs="6">
-            <h3 className=" d-flex align-items-center gap-1">
-              {" "}
-              <i class="ri-youtube-fill"></i> Youtube
+          <Col lg="2" md="3" sm="4" xs="6" onClick={handleClick}>
+            <h3 className="company-col d-flex align-items-center gap-1">
+              <i class="ri-youtube-fill" ></i> Youtube
             </h3>
           </Col>
 
-          <Col lg="2" md="3" sm="4" xs="6">
-            <h3 className=" d-flex align-items-center gap-1">
-              {" "}
-              <i class="ri-instagram-line"></i> Instragram
+          <Col lg="2" md="3" sm="4" xs="6" onClick={handleClick}>
+            <h3 className="company-col d-flex align-items-center gap-1">
+              <i class="ri-whatsapp-fill" ></i> WhatsApp
             </h3>
           </Col>
 
-          <Col lg="2" md="3" sm="4" xs="6">
-            <h2 className=" d-flex align-items-center gap-1">
-              {" "}
-              <i class="ri-google-fill"></i> Google
-            </h2>
-          </Col>
         </Row>
       </Container>
     </section>

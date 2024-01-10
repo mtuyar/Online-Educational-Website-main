@@ -10,7 +10,7 @@ const Newsletter = () => {
           <Col lg="12" className="text-center">
             <h2 className="mb-4">Bizden haberdar olmak için abone olun</h2>
             <div className="subscribe">
-              <input type="text" placeholder="Email" />
+              <input className="inputAbone" type="text" placeholder="Email" />
               <button className="btn">Abone Ol</button>
             </div>
           </Col>

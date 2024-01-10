@@ -1,3 +1,27 @@
 .testimonial__content h2 {
   font-weight: 600;
 }
+
+
+
+@media (max-width: 1100px) {
+  .testimonial__content h2 {
+    font-weight: 600;
+    text-align:right;
+    max-width: none; /* İçerik genişlik sınırlaması olmasın */
+  }
+
+  .testimonial__wrapper {
+    flex-direction: column; /* Mobilde dikey düzen */
+    text-align: center; /* İçeriği yatayda ortala */
+    justify-content: space-between;
+  }
+
+  .testimonial__img {
+    width: 100%; /* İmage tam genişlikte olsun */
+    margin-bottom: 20px; /* İmage ile içerik arasına boşluk bırak */
+    text-align: center;
+    justify-content: center;
+    display: flex;
+  }
+}
