@@ -15,6 +15,7 @@ footer {
   padding-top: 70px;
   padding-bottom: 70px;
 }
+
 h1,
 h2,
 h3,
@@ -36,6 +37,10 @@ p {
   font-weight: 400;
 }
 
+i {
+  color: #17bf9e;
+}
+
 button.btn {
   background: #17bf9e;
   color: #fff;
@@ -43,6 +48,17 @@ button.btn {
   border-radius: 50px;
 }
 
-i {
-  color: #17bf9e;
+button.btn:hover {
+  background: #208a75;
+  color: #FFF
+}
+
+button.btn:active {
+  background: #208a75;
+  color: #FFF
+}
+
+button.btn::after {
+  background: #17bf9e;
+  color: #FFF
 }
