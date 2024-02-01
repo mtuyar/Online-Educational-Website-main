@@ -63,7 +63,7 @@ export default function Header() {
     if (window.location.pathname === '/') {
       window.location.reload();
     } else {
-      navigate("/");
+      navigate("/adminpanel");
     }
   }
 
@@ -83,7 +83,7 @@ export default function Header() {
           <a className="HeaderTexts" href="/" >Anasayfa</a>
           <a className="HeaderTexts" href="/courses-section" >Kurslar</a>
           <a className="HeaderTexts" href="/ders-notları" >Ders Notları</a>
-          <a className="HeaderTexts" href="/admin-panel2" >Sık Sorulan Sorular</a>
+          <a className="HeaderTexts" href="/faqs" >Sık Sorulan Sorular</a>
           <a className="HeaderTexts" href="/about-us" >Hakkımızda</a>
           <div>
             {!isLoggedIn ? (
@@ -103,9 +103,9 @@ export default function Header() {
                   <img src="https://pbs.twimg.com/profile_images/1655838863670034433/WDTJI8oQ_400x400.jpg" className="topAvatarr" />
                 </MenuButton>
                 <Menu slots={{ listbox: Listbox }} style={{ zIndex: 1000 }}>
-                  <MenuItem onClick={createHandleMenuClick('Profile')}>Profil</MenuItem>
-                  <MenuItem onClick={createHandleMenuClick('Language settings')}>Ayarlar</MenuItem>
-                  <MenuItem onClick={createHandleMenuClick('Log out')}>Çıkış Yap</MenuItem>
+                  <MenuItem onClick={createHandleMenuClick('Profile')} style={{fontSize:'17px'}}>Profil</MenuItem>
+                  <MenuItem onClick={createHandleMenuClick('Language settings')} style={{fontSize:'17px'}}>Ayarlar</MenuItem>
+                  <MenuItem onClick={createHandleMenuClick('Log out')} style={{fontSize:'17px'}}>Çıkış Yap</MenuItem>
                 </Menu>
               </Dropdown>
             )}

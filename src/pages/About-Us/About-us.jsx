@@ -54,7 +54,8 @@ const AboutUs = () => {
                         </div>
                         <div className="container">
                             <div className="row">
-                                <div className="col-lg-7 mb-5">
+                                <h2 style={{ color: '#208a74', fontFamily: 'monospace' }}>Bize İlet</h2>
+                                <div className="col-lg-7 mb-5" style={{ marginTop: '1%' }}>
                                     <div className="contact-form">
                                         <div id="success"></div>
                                         <form name="sentMessage" id="contactForm" novalidate="novalidate">
@@ -108,6 +109,14 @@ const AboutUs = () => {
                                                     className="btn py-2 px-4"
                                                     type="submit"
                                                     id="sendMessageButton"
+                                                    onMouseOver={(e) => {
+                                                        e.target.style.backgroundColor = '#208a75';
+                                                        e.target.style.color = '#fff';
+                                                    }}
+                                                    onMouseOut={(e) => {
+                                                        e.target.style.backgroundColor = '#1b9980';
+                                                        e.target.style.color = '#fff';
+                                                    }}
                                                 >
                                                     Gönder
                                                 </button>

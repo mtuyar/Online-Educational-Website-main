@@ -16,13 +16,13 @@ const Home = () => {
       <Header />
       <HeroSection />
       <CompanySection />
-      <Courses header={"Popüler Kurslarımız"} content={"Birbirinden farklı eğitimler ile arapça öğrenebileceğin harika bir platform! Sizde kısa bir süre içerisinde arapçanızı geliştirmek istiyorsanız bu site tam size göre.."}/>
+      <Courses header={"Popüler Kurslarımız"} content={"Birbirinden farklı eğitimler ile arapça öğrenebileceğin harika bir platform! Sizde kısa bir süre içerisinde arapçanızı geliştirmek istiyorsanız bu site tam size göre.."} />
       <ChooseUs />
       <Features />
       <FreeCourse />
       <Testimonials />
       <Newsletter />
-      <Footer />
+      <Footer></Footer>
     </Fragment>
   );
 };

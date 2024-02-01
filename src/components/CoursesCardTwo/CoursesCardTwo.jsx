@@ -41,14 +41,14 @@ const CoursesCardTwo = (props) => {
                     </div>
                 </div>
                 <a
-                    href="" className="btn px-4 mx-auto mb-4"
-                    style={{ backgroundColor: '#1b9980', color: 'white' }}
+                    href="/course-view" className="btn px-4 mx-auto mb-4"
+                    style={{ backgroundColor: '#17bf9e', color: 'white' }}
                     onMouseOver={(e) => {
                         e.target.style.backgroundColor = '#155e4d';
                         e.target.style.color = '#fff';
                     }}
                     onMouseOut={(e) => {
-                        e.target.style.backgroundColor = '#1b9980';
+                        e.target.style.backgroundColor = '#17bf9e';
                         e.target.style.color = 'white';
                     }}
                 >Kaydol</a>

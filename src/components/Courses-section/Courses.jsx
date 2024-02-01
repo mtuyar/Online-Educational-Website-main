@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Container, Row, Col } from "reactstrap";
 import "./courses.css";
 import CourseCard from "./CourseCard";
@@ -19,7 +19,7 @@ const coursesData = [
     lesson: 12,
     students: 2.8,
     rating: 5.4,
-    imgUrl: "https://media-whichmedia.s3.ap-southeast-1.amazonaws.com/media/large/e/0/e0814526963e.jpeg",
+    imgUrl:  "https://s3.envato.com/files/361727964/268_E39A0819.jpg",
   },
   {
     id: "03",
@@ -43,7 +43,7 @@ const coursesData = [
     lesson: 14,
     students: 1.5,
     rating: 5.9,
-    imgUrl: "https://media-whichmedia.s3.ap-southeast-1.amazonaws.com/media/large/e/0/e0814526963e.jpeg",
+    imgUrl: "https://s3.envato.com/files/361727964/268_E39A0819.jpg",
   },
   {
     id: "06",
@@ -67,12 +67,11 @@ const coursesData = [
     lesson: 14,
     students: 1.5,
     rating: 5.9,
-    imgUrl: "https://media-whichmedia.s3.ap-southeast-1.amazonaws.com/media/large/e/0/e0814526963e.jpeg",
+    imgUrl: "https://s3.envato.com/files/361727964/268_E39A0819.jpg",
   },
 ];
 
 const Courses = (props) => {
-
   const navigate = useNavigate();
   const breakPoints = [
     { itemsToShow: 4 }
@@ -95,7 +94,17 @@ const Courses = (props) => {
                 </p>
               </div>
               <div className="w-50 text-end">
-                <button className="btn" onClick={onClickSeeAll}>Hepsini Gör</button>
+                <button
+                  className="btn"
+                  onMouseOver={(e) => {
+                    e.target.style.backgroundColor = '#208a75';
+                    e.target.style.color = '#fff';
+                  }}
+                  onMouseOut={(e) => {
+                    e.target.style.backgroundColor = '#17bf9e';
+                    e.target.style.color = '#fff';
+                  }}
+                  onClick={onClickSeeAll}>Hepsini Gör</button>
               </div>
             </div>
           </Col>

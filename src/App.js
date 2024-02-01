@@ -20,6 +20,9 @@ import Login from "./pages/login/Login";
 import SignInForm from "./pages/login/SignIn";
 import SignUpForm from "./pages/login/SignUp";
 import LessonNotes from "./pages/LessonNotes/LessonNotes";
+import CourseView from "./pages/CourseView/CourseView";
+import Faqs from "./pages/Faqs/Faqs";
+import CourseWatch from "./pages/CourseWatch/CourseWatch";
 
 function App() {
   return (
@@ -47,8 +50,8 @@ function App() {
             path="*"
             element={<Navigate to="/" />}
           />
-          <Route path="/admin-panel2"
-            element={<AdminHome></AdminHome>}
+          <Route path="/faqs"
+            element={<Faqs />}
           />
           <Route path="/users"
             element={<UserList></UserList>}
@@ -76,6 +79,15 @@ function App() {
           />
           <Route path="/sign-up"
             element={<SignUpForm />}
+          />
+          <Route path="/course-view"
+            element={<CourseView />}
+          />
+          <Route path="/adminpanel"
+            element={<AdminHome />}
+          />
+          <Route path="/course-watch"
+            element={<CourseWatch />}
           />
         </Routes>
       </Router>

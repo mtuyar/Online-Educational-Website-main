@@ -1,6 +1,5 @@
 import React from "react";
 import { Container, Row, Col, ListGroup, ListGroupItem } from "reactstrap";
-
 import "./footer.css";
 
 const footerQuickLinks = [

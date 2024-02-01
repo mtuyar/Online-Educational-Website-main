@@ -15,7 +15,7 @@ import {
   VideoCall,
   Videocam,
   Book,
-  BookSharp,
+  BookSharp, 
   BookTwoTone,
   LibraryBooks,
   School,
@@ -61,12 +61,10 @@ export default function Sidebar() {
                 Kullanıcılar
               </li>
             </Link>
-            <Link to="" className="link">
               <li className="sidebarListItem">
                 <LibraryAdd className="sidebarIcon" />
                 Kurs Ekle
               </li>
-            </Link >
             <Link to="/products" className="link">
               <li className="sidebarListItem">
                 <LibraryBooks className="sidebarIcon" />
@@ -86,7 +84,7 @@ export default function Sidebar() {
         <div className="sidebarMenu">
           <h3 className="sidebarTitle">Sayfaları Düzenle</h3>
           <ul className="sidebarList">
-          <li className="sidebarListItem">
+            <li className="sidebarListItem">
               <Home className="sidebarIcon" />
               Ana Sayfa
             </li>
@@ -107,7 +105,7 @@ export default function Sidebar() {
         <div className="sidebarMenu">
           <h3 className="sidebarTitle">Ek</h3>
           <ul className="sidebarList">
-          <li className="sidebarListItem">
+            <li className="sidebarListItem">
               <ChatBubbleOutline className="sidebarIcon" />
               Yorumlar
             </li>

@@ -32,40 +32,82 @@ const LessonNotes = () => {
                     <div className="row pt-5">
                         <div className="col-lg-8">
                             <div className="d-flex flex-column text-left mb-3">
-                                <h2 style={{ marginBottom: 60, fontSize: 55, fontFamily: 'Slab Serif', color: '#11856d' }}>Ders Notları</h2>
+                                <h2 style={{ marginBottom: 60, fontSize: 55, fontFamily: 'Slab Serif', color: '#333946' }}>Ders Notları</h2>
                             </div>
                             <div style={{ marginBottom: '4%', marginRight: '5%' }}>
+
                                 <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'baseline', padding: '10px', justifyContent: 'space-between' }}>
                                     <h2
                                         className="mb-4"
-                                        style={{ color: '#11856d', fontSize: '21px', fontFamily: "sans-serif", margin: 0, textDecoration: 'none' }}
+                                        style={{ color: '#333946', fontSize: '21px', fontFamily: "sans-serif", margin: 0, textDecoration: 'none' }}
                                     >Belagat Dersi Notlar PDF</h2>
-                                    <button className="btn" style={{ marginLeft: 40, width: '20%', justifyContent: 'center', display: 'flex' }}>İndir</button>
+                                    <button
+                                        className="btn" style={{ marginLeft: 40, width: '20%', justifyContent: 'center', display: 'flex' }}
+                                        onMouseOver={(e) => {
+                                            e.target.style.backgroundColor = '#208a75';
+                                            e.target.style.color = '#fff';
+                                        }}
+                                        onMouseOut={(e) => {
+                                            e.target.style.backgroundColor = '#17bf9e';
+                                            e.target.style.color = '#fff';
+                                        }}
+                                    >İndir</button>
                                 </div>
 
                                 <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'baseline', padding: '10px', justifyContent: 'space-between' }}>
                                     <h2
                                         className="mb-4"
-                                        style={{ color: '#11856d', fontSize: '21px', fontFamily: "sans-serif", margin: 0, textDecoration: 'none' }}
+                                        style={{ color: '#333946', fontSize: '21px', fontFamily: "sans-serif", margin: 0, textDecoration: 'none' }}
                                     >Okuma Dersi Notlar PDF</h2>
-                                    <button className="btn" style={{ marginLeft: 40, width: '20%', justifyContent: 'center', display: 'flex' }}>İndir</button>
+                                    <button
+                                        className="btn" style={{ marginLeft: 40, width: '20%', justifyContent: 'center', display: 'flex' }}
+                                        onMouseOver={(e) => {
+                                            e.target.style.backgroundColor = '#208a75';
+                                            e.target.style.color = '#fff';
+                                        }}
+                                        onMouseOut={(e) => {
+                                            e.target.style.backgroundColor = '#17bf9e';
+                                            e.target.style.color = '#fff';
+                                        }}
+                                    >İndir</button>
                                 </div>
 
                                 <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'baseline', padding: '10px', justifyContent: 'space-between' }}>
                                     <h2
                                         className="mb-4"
-                                        style={{ color: '#11856d', fontSize: '21px', fontFamily: "sans-serif", margin: 0, textDecoration: 'none' }}
+                                        style={{ color: '#333946', fontSize: '21px', fontFamily: "sans-serif", margin: 0, textDecoration: 'none' }}
                                     >Dinleme Dersi Notlar PDF</h2>
-                                    <button className="btn" style={{ marginLeft: 40, width: '20%', justifyContent: 'center', display: 'flex' }}>İndir</button>
+                                    <button
+                                        className="btn" style={{ marginLeft: 40, width: '20%', justifyContent: 'center', display: 'flex' }}
+                                        onMouseOver={(e) => {
+                                            e.target.style.backgroundColor = '#208a75';
+                                            e.target.style.color = '#fff';
+                                        }}
+                                        onMouseOut={(e) => {
+                                            e.target.style.backgroundColor = '#17bf9e';
+                                            e.target.style.color = '#fff';
+                                        }}
+                                    >İndir</button>
                                 </div>
 
                                 <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'baseline', padding: '10px', justifyContent: 'space-between' }}>
                                     <h2
                                         className="mb-4"
-                                        style={{ color: '#11856d', fontSize: '21px', fontFamily: "sans-serif", margin: 0, textDecoration: 'none' }}
+                                        style={{ color: '#333946', fontSize: '21px', fontFamily: "sans-serif", margin: 0, textDecoration: 'none' }}
                                     >YDS Dersi Notlar PDF</h2>
-                                    <button className="btn" style={{ marginLeft: 40, width: '20%', justifyContent: 'center', display: 'flex' }}>İndir</button>
+                                    <button
+                                        className="btn" style={{ marginLeft: 40, width: '20%', justifyContent: 'center', display: 'flex' }}
+                                        onMouseOver={(e) => {
+                                            e.target.style.backgroundColor = '#208a75';
+                                            e.target.style.color = '#fff';
+                                        }}
+                                        onMouseOut={(e) => {
+                                            e.target.style.backgroundColor = '#17bf9e';
+                                            e.target.style.color = '#fff';
+                                        }}
+                                    >İndir</button>
                                 </div>
+
                             </div>
 
                             <div style={{ marginRight: '5%' }}>
@@ -77,7 +119,7 @@ const LessonNotes = () => {
                         <div className="col-lg-4 mt-5 mt-lg-0">
 
                             <div className="mb-3">
-                                <h2 className="mb-4" style={{ color: '#11856d', fontFamily: "sans-serif", textDecoration: 'none' }}
+                                <h2 className="mb-4" style={{ color: '#333946', fontFamily: "sans-serif", textDecoration: 'none' }}
                                 >Ders Notları</h2>
                                 <ul className="list-group list-group-flush">
                                     <li className="list-group-item d-flex justify-content-between align-items-center px-0">
@@ -123,7 +165,7 @@ const LessonNotes = () => {
                             <div className="mb-5">
                                 <h2
                                     className="mb-4"
-                                    style={{ color: '#11856d', fontFamily: "'Your Cool Font', sans-serif", textDecoration: 'none' }}
+                                    style={{ color: '#333946', fontFamily: "'Your Cool Font', sans-serif", textDecoration: 'none' }}
                                 >Son Paylaşılan Notlar</h2>
                                 <div
                                     className="d-flex align-items-center bg-light shadow-sm rounded overflow-hidden mb-3"
@@ -135,8 +177,9 @@ const LessonNotes = () => {
                                     />
                                     <div className="pl-3">
                                         <h5
-                                            className="">Muzari ve Mazi Filller
+                                            className="" style={{ color: '#333946' }}>Muzari ve Mazi Filller
                                         </h5>
+
                                         <div
                                             className="d-flex">
                                             <small className="mr-3"><i
@@ -149,8 +192,9 @@ const LessonNotes = () => {
                                                 <i
                                                     className="fa fa-book "
                                                     style={{ color: '#17bf9e' }}
-                                                ></i> Belegat</small>
-
+                                                >
+                                                </i> Belegat
+                                            </small>
                                         </div>
                                     </div>
                                 </div>
@@ -163,7 +207,7 @@ const LessonNotes = () => {
                                         style={{ width: "80px", height: "80px" }}
                                     />
                                     <div className="pl-3">
-                                        <h5 className="">Fiil Çekimleri</h5>
+                                        <h5 className="" style={{ color: '#333946' }}>Fiil Çekimleri</h5>
                                         <div className="d-flex">
                                             <small className="mr-3"
                                             ><i className="fa fa-user"></i> Reyyan Koçer</small
@@ -183,7 +227,7 @@ const LessonNotes = () => {
                                         style={{ width: "80px", height: "80px" }}
                                     />
                                     <div className="pl-3">
-                                        <h5 className="">Gelecek Zaman İfadeleri</h5>
+                                        <h5 className="" style={{color:'#333946'}}>Gelecek Zaman İfadeleri</h5>
                                         <div className="d-flex">
                                             <small className="mr-3"
                                             ><i className="fa fa-user"></i> Eren Akkuş</small
@@ -203,7 +247,7 @@ const LessonNotes = () => {
 
                             <div className="mb-5">
                                 <h2 className="mb-4"
-                                    style={{ color: '#11856d' }}
+                                    style={{ color: '#333946' }}
                                 >Başlıklar
                                 </h2>
                                 <div className="d-flex flex-wrap m-n1">
@@ -280,8 +324,8 @@ const LessonNotes = () => {
                                 <img src="img/blog-3.jpg" alt="" className="img-fluid rounded" />
                             </div>
 
-                            <div>
-                                <h2 className="mb-4">Köşe Notu</h2>
+                            <div style={{ color: '#333946' }}>
+                                <h2 className="mb-4" style={{ color: '#333946' }}>Köşe Notu</h2>
                                 Başarı, herkese göre farklı ve göreceli bir kavramdır. Başarılı olabilmek için zengin olmamıza gerek yoktur.
                                 Başarı tamamen çalışma odaklı bir sonuca dayanır. eğer başarılı olmak istiyorsak kişisel gelişim sözleri, kendimize ilke edinmeliyiz.
                             </div>

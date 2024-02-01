@@ -2,8 +2,8 @@
   padding: 15px;
   flex-shrink: 0;
   justify-content: flex-start;
-  width: 290px;
-  height: 390px;
+  width: 310px;
+  height: 430px;
   border-radius: 10px;
   margin-left: 10px;
   background-size: cover;
@@ -63,4 +63,16 @@
 
 .containerClassTwo {
   margin-top: 100px;
+}
+
+.btn:active {
+  background: #208a75;
+}
+
+.btn:visited {
+  background: #208a75;
+}
+
+btn:focus {
+  background: #208a75;
 }
